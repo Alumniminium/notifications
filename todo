@@ -1,0 +1,17 @@
+# Resources
+https://specifications.freedesktop.org/notification-spec/notification-spec-latest.html#protocol
+
+
+---
+TODO
+---
+
+Create GUI (notifications)
+Display Notifications
+
+Allow Replacing Notifications by Id (Replaces ID spec)
+
+Handle HINTS (Table 4. Standard Hints)
+Handle TYPES (Table 2. Categories)
+Handle URGENCY LEVELS (Table 3. Urgency Levels)
+

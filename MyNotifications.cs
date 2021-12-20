@@ -1,11 +1,6 @@
 using Notifications.DBus;
 using Tmds.DBus;
 
-[DBusInterface("org.freedesktop.DBus.Introspectable")]
-public interface IIntrospectable : IDBusObject
-{
-    Task<string> IntrospectAsync();
-}
 public class MyNotifications : INotifications
 {
     public ObjectPath ObjectPath { get; } = "/org/freedesktop/Notifications";

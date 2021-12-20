@@ -1,10 +1,11 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics;
 using Tmds.DBus;
+
+Process.Start("pkill", "-KILL dunst");
 
 Task.Run(async() =>
 {
    var notifications = new MyNotifications();
-
    var con = new Connection(Address.Session);
    await con.ConnectAsync();
    await con.RegisterServiceAsync("org.freedesktop.Notifications");
@@ -12,4 +13,4 @@ Task.Run(async() =>
    await con.ActivateServiceAsync("org.freedesktop.Notifications");
 });
 while (true)
-    Console.ReadLine();
+   Console.ReadLine();
