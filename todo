@@ -7,7 +7,9 @@ TODO
 ---
 
 Create GUI (notifications)
+1. make avalonia work
 Display Notifications
+1. use dbus pattern to display basic things
 
 Allow Replacing Notifications by Id (Replaces ID spec)
 
