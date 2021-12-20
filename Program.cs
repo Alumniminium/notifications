@@ -5,7 +5,7 @@ Process.Start("pkill", "-KILL dunst");
 
 Task.Run(async() =>
 {
-   var notifications = new MyNotifications();
+   var notifications = new NotificationService();
    var con = new Connection(Address.Session);
    await con.ConnectAsync();
    await con.RegisterServiceAsync("org.freedesktop.Notifications");

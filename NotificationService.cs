@@ -1,7 +1,7 @@
 using Notifications.DBus;
 using Tmds.DBus;
 
-public class MyNotifications : INotifications
+public class NotificationService : INotifications
 {
     public ObjectPath ObjectPath { get; } = "/org/freedesktop/Notifications";
     public Task<string[]> GetCapabilitiesAsync()
